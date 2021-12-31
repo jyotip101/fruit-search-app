@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fruit-search-app/static/css/main.df7391ff.css",
+    "main.js": "/fruit-search-app/static/js/main.d38c814c.js",
+    "index.html": "/fruit-search-app/index.html",
+    "main.df7391ff.css.map": "/fruit-search-app/static/css/main.df7391ff.css.map",
+    "main.d38c814c.js.map": "/fruit-search-app/static/js/main.d38c814c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df7391ff.css",
+    "static/js/main.d38c814c.js"
+  ]
+}
