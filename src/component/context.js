@@ -3,13 +3,11 @@ import React, { useContext, useState } from 'react'
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false)
+   
 
   return (
     <AppContext.Provider
-      value={{
-        isModalOpen,
-      }}
+      value='value'
     >
       {children}
     </AppContext.Provider>
