@@ -1,8 +1,8 @@
 :root {
-  --main-1: #f6b130;
-  --bg-color: #ffff;
-  --font-color: #2222;
-  --font-color-2: #8a8a8a;
+  --main-1: #28c528;
+  --bg-color: #ffffff;
+  --font-color: #232323;
+  --font-color-2: #fcfcfc;
   --font-famaly: Helvetica;
   --transition: all 0.3s linear;
   --light-shadow: 0 5px 15px #0000001a;
@@ -25,19 +25,6 @@ body {
   margin: 2rem auto;
   text-align: center;
 }
-/* .section,
-section {
-  margin: 2px auto;
-  color: var(--shodow-color);
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bg-color);
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 0;
-  width: 400px;
-} */
 
 .btn,
 .remove {
@@ -63,4 +50,202 @@ section {
 .btn {
   margin: auto;
   margin-top: 2rem;
+}
+
+/* header style */
+nav {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  padding: 0.5rem 1rem;
+  box-shadow: var(--light-shadow);
+  background-color: #fff;
+}
+.header-container {
+  margin: 1rem 5rem;
+  display: flex;
+  max-width: 1280px;
+  justify-content: space-between;
+  align-items: center;
+}
+.links-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links-items li {
+  margin: 0 1rem;
+  list-style: none;
+}
+.logo {
+  font-size: 150%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  padding-right: 5px;
+  width: 30px;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+  text-transform: capitalize;
+  font-size: 140%;
+  transition: var(--transition);
+}
+
+.links-items li .link:hover {
+  color: #28c528;
+}
+.menu-logo {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-hide {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    margin: 0.5rem 1rem;
+  }
+  .links-items {
+    display: none;
+  }
+  .menu-logo {
+    display: block;
+    border: none;
+    background-color: transparent;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+  .menu-logo span {
+    font-size: 200%;
+  }
+  .mobile-menu {
+    width: fit-content;
+    right: 20px;
+    top: 10px;
+    padding: 2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--main-1);
+    border-radius: 5px;
+    box-shadow: var(--dark-shadow);
+    transition: var(--transition);
+  }
+  .close-logo {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border: none;
+    background-color: transparent;
+    color: var(--bg-color);
+    cursor: pointer;
+
+    transition: var(--transition);
+  }
+  .close-logo-hide {
+    visibility: hidden;
+
+    transition: var(--transition);
+  }
+  .mobile-menu li {
+    list-style: none;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .mobile-menu li a {
+    font-size: 120%;
+    color: var(--bg-color);
+  }
+  .mobile-menu-hide {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .header-container {
+    margin: 0.5rem;
+  }
+}
+
+/* home style */
+.home-container {
+  max-width: 1280px;
+  margin: 100px auto 2rem auto;
+}
+.input-field {
+  max-width: 500px;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--light-shadow);
+  border-radius: calc(0.5 * 44px);
+  padding: 0 1rem;
+  transition: var(--transition);
+}
+.input-field:hover,
+.input-field:focus {
+  box-shadow: var(--dark-shadow);
+}
+.input-field input {
+  width: 90%;
+  padding: 1rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: calc(0.5 * 44px);
+  font-size: 130%;
+  transition: var(--transition);
+}
+.search-but {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.search-but span {
+  color: var(--font-color);
+  transition: var(--transition);
+}
+.search-but span:hover {
+  color: var(--main-1);
+}
+
+/* Fruits Details container style */
+.card-contant {
+  margin: 50px auto 2rem auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: var(--light-shadow);
+  width: fit-content;
+  padding: 1rem;
+  transition: var(--transition);
+}
+.card:hover,
+.card:focus {
+  box-shadow: var(--dark-shadow);
+}
+@media screen and (max-width: 700px) {
+  .card {
+    margin: 0.5rem auto;
+    width: 90%;
+  }
+}
+/* Fruits Details style */
+
+.FruitDetails-container {
 }

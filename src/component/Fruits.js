@@ -1,10 +1,11 @@
 import React, { useReducer } from 'react'
 import { reducer } from './reducer'
+import { useFetchData } from './FetchData'
 
 const API_URL = 'https://www.fruityvice.com/api/fruit/apple'
 
 const initialState = {
-  data: [],
+  data: [useFetchData(url, isLoading)],
   isLoading: false,
   isError: false,
 }
