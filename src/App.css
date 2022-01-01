@@ -1,7 +1,7 @@
 :root {
   --main-1: #28c528;
   --bg-color: #ffffff;
-  --font-color: #232323;
+  --font-color: #0b0b0b;
   --font-color-2: #fcfcfc;
   --font-famaly: Helvetica;
   --transition: all 0.3s linear;
@@ -248,4 +248,51 @@ a {
 /* Fruits Details style */
 
 .FruitDetails-container {
+}
+
+.card-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.fruits-contant {
+  margin: 0.5rem;
+  padding: 1rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: var(--light-shadow);
+}
+.fruits-contant .nutritions-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.nutritions-center .nutritions-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.nutritions-item .nutritions {
+  margin: 0.5rem;
+}
+.nutritions p {
+  color: hsla(120, 66%, 46%, 0.8);
+}
+.fruits-contant .link {
+  margin: 0.5rem;
+  background: var(--main-1);
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  color: var(--bg-color);
+  transition: var(--transition);
+}
+
+.fruits-contant .link:hover,
+.fruits-contant .link:focus {
+  box-shadow: var(--light-shadow);
 }
