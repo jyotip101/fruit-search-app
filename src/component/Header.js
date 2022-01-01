@@ -9,7 +9,7 @@ const Header = () => {
     <>
       <nav>
         <div className='header-container'>
-          <Link className='logo' to='/'>
+          <Link className='logo' to='/fruit-search-app'>
             <img className='logo-img' src={logoImg} alt='logoImg' />
             Fruit Search App
           </Link>
@@ -19,7 +19,7 @@ const Header = () => {
 
           <ul className='links-items'>
             <li>
-              <Link className='link' to='/'>
+              <Link className='link' to='/fruit-search-app'>
                 Home
               </Link>
             </li>
@@ -40,7 +40,7 @@ const Header = () => {
             </button>
 
             <li onClick={closeMenu}>
-              <Link className='link' to='/'>
+              <Link className='link' to='/fruit-search-app'>
                 Home
               </Link>
             </li>

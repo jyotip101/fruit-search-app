@@ -10,7 +10,7 @@ const FruitDetails = () => {
     <>
       <div className='FruitDetails-container'>
         <h1>FruitDetails {id}</h1>
-        <Link to='/' className='link'>
+        <Link to='/fruit-search-app' className='link'>
           back to home
         </Link>
       </div>
