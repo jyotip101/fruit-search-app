@@ -1,8 +1,8 @@
 :root {
-  --main-1: #28c528;
-  --bg-color: #ffffff;
-  --font-color: #0b0b0b;
-  --font-color-2: #fcfcfc;
+  --main-1: #f56d58;
+  --bg-color: #fbf6f6;
+  --font-color: #0a0a0a;
+  --font-color-2: #c8ccd5;
   --font-famaly: Helvetica;
   --transition: all 0.3s linear;
   --light-shadow: 0 5px 15px #0000001a;
@@ -19,6 +19,7 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
   background-color: var(--bg-color);
+  font-family: var(--font-famaly);
 }
 
 #root {
@@ -28,7 +29,7 @@ body {
 
 .btn,
 .remove {
-  background: var(--main-color);
+  background: var(--main-1);
   color: var(--font-color);
   outline: none;
   border: none;
@@ -59,7 +60,7 @@ nav {
   position: fixed;
   padding: 0.5rem 1rem;
   box-shadow: var(--light-shadow);
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 .header-container {
   margin: 1rem 5rem;
@@ -96,7 +97,7 @@ a {
 }
 
 .links-items li .link:hover {
-  color: #28c528;
+  color: var(--main-1);
 }
 .menu-logo {
   display: none;
@@ -120,7 +121,7 @@ a {
     display: block;
     border: none;
     background-color: transparent;
-    color: var(--font-color);
+    color: var(--main-1);
     cursor: pointer;
   }
   .menu-logo span {
@@ -166,6 +167,10 @@ a {
     font-size: 120%;
     color: var(--bg-color);
   }
+
+  .mobile-menu li a:hover {
+    color: var(--font-color-2);
+  }
   .mobile-menu-hide {
     visibility: hidden;
   }
@@ -189,6 +194,7 @@ a {
   align-items: center;
   justify-content: center;
   box-shadow: var(--light-shadow);
+  background: #fff;
   border-radius: calc(0.5 * 44px);
   padding: 0 1rem;
   transition: var(--transition);
@@ -265,7 +271,17 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
   box-shadow: var(--light-shadow);
+}
+.fruits-contant .fruit-title {
+  color: var(--font-color-2);
+}
+.fruits-contant .fruit-title span {
+  font-size: 130%;
+  font-weight: 600;
+  color: var(--font-color);
 }
 .fruits-contant .nutritions-center {
   display: flex;
@@ -281,13 +297,17 @@ a {
   margin: 0.5rem;
 }
 .nutritions p {
-  color: hsla(120, 66%, 46%, 0.8);
+  color: var(--font-color-2);
+}
+.nutritions h2 {
+  color: var(--font-color);
 }
 .fruits-contant .link {
   margin: 0.5rem;
   background: var(--main-1);
   border-radius: 5px;
   padding: 0.2rem 0.5rem;
+  font-size: 120%;
   color: var(--bg-color);
   transition: var(--transition);
 }

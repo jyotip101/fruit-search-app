@@ -7,9 +7,10 @@ const Fruits = ({ name, id, nutritions }) => {
   return (
     <>
       <article className='fruits-contant'>
-        <h1>
-          <img src={logoImg} alt='logoImg' /> Fruit: {name}
-        </h1>
+        <div className='fruit-title'>
+          <img src={logoImg} alt='logoImg' /> Fruit Name: <br />
+          <span> {name}</span>
+        </div>
         <div className='nutritions-center'>
           <div className='nutritions-item'>
             <div className='nutritions'>

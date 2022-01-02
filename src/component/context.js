@@ -50,11 +50,9 @@ const AppProvider = ({ children }) => {
         isMenuOpen,
         loading,
         fruits,
-        setFruits,
         openMenu,
         closeMenu,
         setSearchTerm,
-        setLoading,
       }}
     >
       {children}

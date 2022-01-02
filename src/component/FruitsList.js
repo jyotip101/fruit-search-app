@@ -10,7 +10,11 @@ const FruitsList = () => {
     return <Loading />
   }
   if (fruits.length < 1) {
-    return <h1> no fruits matches your search criteria</h1>
+    return (
+      <h2 style={{ marginTop: '3rem' }}>
+        no fruits matches your search criteria
+      </h2>
+    )
   }
   return (
     <>
