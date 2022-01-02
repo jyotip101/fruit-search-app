@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fruit-search-app/static/css/main.485056e7.css",
-    "main.js": "/fruit-search-app/static/js/main.85ba1f84.js",
+    "main.css": "/fruit-search-app/static/css/main.c7410382.css",
+    "main.js": "/fruit-search-app/static/js/main.750b2496.js",
     "index.html": "/fruit-search-app/index.html",
-    "main.485056e7.css.map": "/fruit-search-app/static/css/main.485056e7.css.map",
-    "main.85ba1f84.js.map": "/fruit-search-app/static/js/main.85ba1f84.js.map"
+    "main.c7410382.css.map": "/fruit-search-app/static/css/main.c7410382.css.map",
+    "main.750b2496.js.map": "/fruit-search-app/static/js/main.750b2496.js.map"
   },
   "entrypoints": [
-    "static/css/main.485056e7.css",
-    "static/js/main.85ba1f84.js"
+    "static/css/main.c7410382.css",
+    "static/js/main.750b2496.js"
   ]
 }
