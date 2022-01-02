@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom'
 import logoImg from '../img/fruit.png'
 
 const Fruits = ({ name, id, nutritions }) => {
-  console.log(nutritions)
   return (
     <>
       <article className='fruits-contant'>
         <div className='fruit-title'>
-          <img src={logoImg} alt='logoImg' /> Fruit Name: <br />
+          <img src={logoImg} alt='logoImg' /> Fruit Name:
           <span> {name}</span>
         </div>
+
+        <p className='line' />
         <div className='nutritions-center'>
           <div className='nutritions-item'>
             <div className='nutritions'>

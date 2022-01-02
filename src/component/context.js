@@ -53,6 +53,7 @@ const AppProvider = ({ children }) => {
         openMenu,
         closeMenu,
         setSearchTerm,
+        setFruits,
       }}
     >
       {children}
